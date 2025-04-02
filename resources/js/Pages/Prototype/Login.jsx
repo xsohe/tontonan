@@ -62,7 +62,7 @@ export default function Login() {
                                     Start Watching
                                 </span>
                             </a> */}
-                                <Link href="">
+                                <Link href={route("prototype.dashboard")}>
                                     <Button type="button" variant="primary">
                                         <span className="text-base font-semibold">
                                             Start Watching

@@ -8,7 +8,7 @@
     }
 
     .input-primary-outline {
-        @apply bg-white focus:bg-white focus:outline-alerange focus:border-gray-50;
+        @apply bg-white focus:bg-white focus:outline-alerange focus:border-gray-300;
         @apply file:bg-alerange file:text-white file:rounded-sm file:p-2;
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-PropTypes.Button = {
+Button.propTypes = {
     type: PropTypes.oneOf(["submit", "button", "reset"]),
     className: PropTypes.string,
     variant: PropTypes.oneOf([
