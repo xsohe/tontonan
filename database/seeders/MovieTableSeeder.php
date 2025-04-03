@@ -22,7 +22,7 @@ class MovieTableSeeder extends Seeder
                 "category" => "Action",
                 "video_url" => "https://www.youtube.com/watch?v=mqqft2x_Aa4",
                 "thumbnail" => "https://ik.trn.asia/uploads/2022/03/1646449217541.jpeg",
-                "rating" => 8.3,
+                "rating" => 4.3,
                 "is_featured" => 1,
             ],
             [
@@ -31,7 +31,7 @@ class MovieTableSeeder extends Seeder
                 "category" => "Action",
                 "video_url" => "https://www.youtube.com/watch?v=uhUht6vAsMY",
                 "thumbnail" => "https://cdn.ngopibareng.id/uploads/2022/2022-05-01/sinopsis-justice-league-superhero-bergabung-menyelamatkan-dunia--thumbnail-979.webp",
-                "rating" => 8.3,
+                "rating" => 3.3,
                 "is_featured" => 0,
             ],
             [
@@ -40,7 +40,7 @@ class MovieTableSeeder extends Seeder
                 "category" => "Action",
                 "video_url" => "https://www.youtube.com/watch?v=1Q8fG0TtVAY",
                 "thumbnail" => "https://www.rukita.co/stories/wp-content/uploads/2022/06/wonder-woman.jpg",
-                "rating" => 9.3,
+                "rating" => 4.5,
                 "is_featured" => 0,
             ]
         ];
