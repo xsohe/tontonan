@@ -54,14 +54,6 @@ export default function Login() {
                                 </div>
                             </div>
                             <div className="grid space-y-[14px] mt-[30px]">
-                                {/* <a
-                                href="/"
-                                className="rounded-2xl bg-alerange py-[13px] text-center"
-                            >
-                                <span className="text-base font-semibold">
-                                    Start Watching
-                                </span>
-                            </a> */}
                                 <Link href={route("prototype.dashboard")}>
                                     <Button type="button" variant="primary">
                                         <span className="text-base font-semibold">
