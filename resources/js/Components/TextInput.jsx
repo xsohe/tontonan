@@ -6,7 +6,7 @@ const TextInput = forwardRef(function TextInput(
         type = "text",
         className = "",
         isFocused = false,
-        defaultValue = "",
+        value,
         variant = "primary",
         placeholder,
         isError,
@@ -27,7 +27,7 @@ const TextInput = forwardRef(function TextInput(
             <input
                 {...props}
                 type={type}
-                defaultValue={defaultValue}
+                value={value}
                 className={`rounded-2xl py-[13px] px-7 w-full input-${variant} ${className} ${
                     isError && "input-error"
                 }`}
@@ -42,7 +42,7 @@ TextInput.propTypes = {
     type: PropTypes.oneOf(["text", "password", "email", "number", "file"]),
     className: PropTypes.string,
     isFocused: PropTypes.bool,
-    defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     variant: PropTypes.oneOf(["primary", "error", "primary-outline"]),
     placeholder: PropTypes.string,
     isError: PropTypes.bool,
