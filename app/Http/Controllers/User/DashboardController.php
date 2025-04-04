@@ -12,7 +12,7 @@ class DashboardController extends Controller
         $featuredMovies = Movie::where("is_featured", true)->get();
         $movies = Movie::all();
 
-        return inertia("Dashboard/User/Index", [
+        return inertia("User/Dashboard/Index", [
             "featuredMovies" => $featuredMovies,
             "movies" => $movies,
         ]);
