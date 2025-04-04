@@ -16,7 +16,7 @@ export default function Index({ auth, flashMessage, movies }) {
                 <FlashMessage message={flashMessage.message} />
             )}
 
-            <table className="table-fixed w-full text-sm text-left text-gray-500">
+            <table className="table-fixed w-full text-sm text-left text-gray-500 mt-8">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 text-center">
                     <tr className="bg-white border-b border-gray-200">
                         <th className="pb-4">Image</th>
@@ -52,9 +52,16 @@ export default function Index({ auth, flashMessage, movies }) {
                             <td>{movie.category}</td>
                             <td>{movie.rating}</td>
                             <td>
-                                <Button type="button" variant="warning">
-                                    Edit
-                                </Button>
+                                <Link
+                                    href={route(
+                                        "admin.dashboard.movie.edit",
+                                        movie.id
+                                    )}
+                                >
+                                    <Button type="button" variant="warning">
+                                        Edit
+                                    </Button>
+                                </Link>
                             </td>
                             <td>
                                 <Button type="button" variant="danger">
