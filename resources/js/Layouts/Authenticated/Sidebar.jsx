@@ -34,6 +34,7 @@ export default function Sidebar({ auth }) {
                                 icon={menu.icon}
                                 text={menu.text}
                                 link={menu.link}
+                                method={menu.method}
                                 isActive={
                                     menu.link && route().current(menu.link)
                                 }
