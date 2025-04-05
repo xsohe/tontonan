@@ -42,7 +42,6 @@ export default function Sidebar({ auth }) {
                         ))}
                     </div>
 
-                    {console.log(auth.activePlan)}
                     {auth.activePlan && (
                         <SubscriptionDetail
                             isPremium={auth.activePlan.name === "Premium"}
