@@ -10,7 +10,7 @@ export default function Index({ auth, flashMessage, movies }) {
         <Authenticated auth={auth}>
             <Head title="List of Movie" titl />
             <Link href={route("admin.dashboard.movie.create")}>
-                <Button type="button" className="w-40 mb-8">
+                <Button type="button" className="w-44 mb-8">
                     Insert New Movie
                 </Button>
             </Link>
